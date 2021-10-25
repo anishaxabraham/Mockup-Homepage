@@ -1,0 +1,433 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+@media screen and (max-width: 640px) {
+    .navbar {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        
+    }
+    
+    .navbar button {
+        display: none;
+        margin: 1rem; 
+        vertical-align: middle;
+        line-height: 2rem;
+        border: none;
+        background-color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3C3C3C;
+    
+    }
+    #signup {
+        display:inline-block;
+        position: absolute;
+        right: 3.5rem;
+        padding-left: 1rem;
+        justify-content: flex-end;
+        background-color: #8EE5D1;
+        padding-right: 1rem;
+        border-radius: 1rem;
+    }
+    
+    #login {
+        display:inline-block;
+        position: absolute;
+        right: 9rem;
+        padding-right: 2rem;
+        justify-content: flex-end;
+    }
+    
+    #sorty {
+        display:inline-block;
+        font-size: 2rem;
+        color: black;
+    }
+
+    .introduction {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+        
+    img {
+        height: 400px;
+        width: 100%;
+    }
+    
+    .introduction h1 {
+        font-size: 3rem;
+        margin-top: 5rem;
+        
+    }
+    
+    .introduction p{
+        color: #3C3C3C;
+        font-weight: lighter;
+        
+    }
+    
+    #started {
+        
+        line-height: 2rem;
+        border: none;
+        background-color: #8EE5D1;
+        border-radius: 1rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3C3C3C;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+        
+    }
+    .details {
+        background-color: #F4F7FA;
+        text-align: center;
+        padding-top:3rem;
+        height: 10rem;
+    }
+    
+    input {
+        
+        width: 25rem;
+        border-radius: 0.5rem;
+        border: 1px solid grey;
+        color: gray;
+        padding:1rem;
+    }
+    
+    #book {
+        
+        height: 3rem;
+        border: none;
+        width: 27rem;
+        background-color: #8EE5D1;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3C3C3C;
+        margin:1rem;
+        
+    }
+
+
+    .why {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .why h2 {
+        font-size: 3rem;
+    }
+    
+    .why p {
+        font-weight: lighter;
+        color: #3C3C3C;
+    }
+    
+    .why > h2, .why > p {
+        text-align: center;
+        
+    }
+    
+    .reasons {
+        width: 100%;
+    }
+    
+    ol li::before {
+        content: counter(my-awesome-counter) ". ";
+        color: #8EE5D1;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      
+    ol {
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        list-style-position: inside;
+        
+        
+    }
+    
+    li {
+        counter-increment: my-awesome-counter;
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+        padding: 2rem;
+        text-align: center;
+        background-color: #F4F7FA;
+        text-align: left;
+        color: gray;
+        font-weight: lighter;
+
+        
+    }
+    li > span {
+        font-weight: bold;
+        color: black;
+        font-size: 1.5rem;
+    }
+    .footer {
+        background-color: #F4F7FA;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    
+    .contact p, .about p {
+        color: grey;
+        font-weight: lighter;
+    }
+    .contact p span {
+        font-weight: bold;
+    }
+    .contact {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .about {
+        margin: 1rem;
+        padding: 1rem;
+        
+    }
+    
+    
+}
+@media screen and (min-width: 640px) {
+    .navbar {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top:1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding: 1rem;
+        
+    }
+    
+    .navbar button {
+        margin: 1rem; 
+        vertical-align: middle;
+        line-height: 2rem;
+        border: none;
+        background-color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3C3C3C;
+    
+    }
+    #signup {
+        position: absolute;
+        right: 3.5rem;
+        padding-left: 1rem;
+        justify-content: flex-end;
+        background-color: #8EE5D1;
+        padding-right: 1rem;
+        border-radius: 1rem;
+    }
+    
+    #login {
+        position: absolute;
+        right: 9rem;
+        padding-right: 2rem;
+        justify-content: flex-end;
+    }
+    
+    #sorty {
+        font-size: 2rem;
+        color: black;
+    }
+    
+    .introduction {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top:1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding: 1rem;
+    }
+    
+    img {
+        float: right;
+        height: 350px;
+        width: 400px;
+        margin-top:5rem;
+    }
+    
+    .introduction h1 {
+        font-size: 4rem;
+        
+        
+    }
+    
+    .introduction p{
+        color: #3C3C3C;
+        font-weight: lighter;
+        
+    }
+    
+    #started {
+        
+        line-height: 2rem;
+        border: none;
+        background-color: #8EE5D1;
+        border-radius: 1rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3C3C3C;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+    
+    .details {
+        clear: right;
+        padding-left: auto;
+        padding-right: auto;
+        padding: 5rem;
+        background-color: #F4F7FA;
+        text-align: center;
+    }
+    
+    input {
+        
+        width: 30rem;
+        border-radius: 0.5rem;
+        border: 1px solid grey;
+        color: gray;
+        padding:1rem;
+    }
+    
+    #book {
+        
+        height: 3rem;
+        border: none;
+        background-color: #8EE5D1;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #3C3C3C;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+    
+    .why {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    
+    .why h2 {
+        font-size: 2rem;
+    }
+    
+    .why p {
+        font-weight: lighter;
+        color: #3C3C3C;
+    }
+    
+    .why > h2, .why > p {
+        text-align: center;
+        
+    }
+    
+    .reasons {
+        width: 100%;
+    }
+
+    ol li::before {
+        content: counter(my-awesome-counter) ". ";
+        color: #8EE5D1;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    ol {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        list-style-position: inside;
+        list-style: none;
+
+        
+    }
+    
+    
+    li {
+    
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem;
+        padding: 2rem;
+        text-align: center;
+        background-color: #F4F7FA;
+        text-align: left;
+        color: gray;
+        font-weight: lighter;
+        counter-increment: my-awesome-counter;
+    }
+    li > span {
+        font-weight: bold;
+        color: black;
+        font-size:1.5rem;
+    }
+    .footer {
+        background-color: #F4F7FA;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .contact p, .about p {
+        color: grey;
+        font-weight: lighter;
+    }
+    .contact p span {
+        font-weight: bold;
+    }
+    .contact {
+        margin-top: 2rem;
+        margin-right: 3rem;
+        padding-right: 1rem;
+        width: 30%;
+    }
+    
+    .about {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        padding-right: 1rem;
+        width: 30%;
+    }
+    
+}
