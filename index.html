@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CSS Assessment</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="part1">
-            <div class="part1-item" style="font-size:2rem; color: black; align-self:stretch">Sorty</div>
-            <div class="part1-item features">Features</div>
-            <div class="part1-item pricing">Pricing</div>
-            <div class="part1-item resources">Resources</div>
-            <div class="part1-item"style="align-self: flex-end" >Login</div>
-            <div class="part1-item" style="background-color: #8EE5D1; border-radius: 30px; align-self: flex-end">Sign Up</div>
+<head>
+    <title>CSS Assessment</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <button class="left" id="sorty">Sorty</button>
+        <button class="left">Features</button>
+        <button class="left">Pricing</button>
+        <button class="left">Resources</button>
+        <button class="right" id="login">Login</button>
+        <button class="right" id="signup">Sign Up</button>
         </div>
-        <br/> <br/>
-        <div class="part2">
-            <img src="https://github.com/anishaxabraham/TB3-assessments/blob/main/css-assessment/illustration.png" alt="image"/>
-            <h1>The best way to manage projects and tasks</h1>
-            <p>Focus on what is important to you and rely on us for organizing your tasks</p>
-            <button type="button">Get Started</button>
-        </div>
-        <div class="part3">
-            <form>
-                <input type="text" placeholder="Email Address"/>
-                <button type="button">Book a Demo</button> 
-            </form>
-        </div>
-        <div class="part4">
-            <h1>Why Choose Us</h1>
-            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-            <ol>
-                <div class="container">
-                    <div class="container-item">
-                        <li><br/><span class="a">Handle more projects </span><br/>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</li>
-                    </div>
-                    <div class="container-item">
-                        <li><br/><span class="a">Save lot of time </span><br/>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</li>
-                    </div>
-                    <div class="container-item">
-                        <li><br/><span class="a">Improve process </span><br/>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</li>
-                    </div>
-                  
-            </div>
-            </ol>
-            
+    </div>
+
+    <div class="introduction">
+        <div><img src="illustration.png"/></div>
+        <div><h1>The best way to manage projects and tasks</h1>
+        <p>Focus on what is important to you and rely on us for organizing your tasks</p>
+        <button id="started"> Get started</button></div>
         
+    </div>
+
+    <div class="details">
+        <form>
+            <input type="text" id="email" placeholder="Email Address"/>
+            <button id="book">Book a Demo</button>
+        </form>
+    </div>
+    <div class="why">
+        <h2>Why Choose Us</h2>
+        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+        <div class="reasons">
+            <ol>
+                <li><br/><br/><span>Handle more projects</span><br/><br/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                 </li>
+                 <li><br/><br/><span>Save lot of time</span><br/><br/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</li>
+                 <li><br/><br/><span>Improve process</span><br/><br/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</li>
+            </ol>
         </div>
-        <div class="part5" >
-         <div class="container-item-2">
+    </div>
+
+    <div class="footer">
+        <div class="about">
             <h1>About Sorty</h1>
             <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
         </div>
-        <div class="container-item-2">
+        <div class="contact">
             <h1>Contact Us</h1>
-            <p>Send us an email to get in touch <a href="#">contact@sorty.tool</a></p>
+            <p>Send us an email to get in touch <br/><span>contact@sorty.tool</span></p>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
